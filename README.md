@@ -30,3 +30,7 @@
 1. css-next 可以使用未来的CSS语法
 2. autoprefixer 自动添加浏览器前缀
 3. 自动根据 caniuse 兼容最新2版 chrome、最新3版 iOS
+
+### UI
+
+1. 引入 Vux 作为基础UI框架
