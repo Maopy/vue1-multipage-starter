@@ -7,11 +7,21 @@
 |- src
   |- client
     |- assets 存放图片等静态文件
-    |- components
+    |- components 组件文件
     |- modules 各页面入口文件
   |- server
+    app.js
+    index.js
+  template.html
 |- dist
 |- webpack
+  build.js 打包配置文件
+  utils.js 工具函数
+  webpack.config.base.babel.js 通用配置
+  webpack.config.dev.babel.js 开发环境配置
+  webpack.config.prod.babel.js 生产环境配置
+.babelrc
+.eslintrc
 </pre>
 
 ## 技术细节
