@@ -23,4 +23,4 @@ router.map({
 
 let VueApp = Vue.extend(Root)
 
-router.start(VueApp, '#app')
+router.start(VueApp, 'app')

@@ -1,13 +1,14 @@
 import Vue from 'vue'
-import VueRouter from 'vue-router'
+import Router from 'vue-router'
 
 import Root from 'components/Root'
 import App from 'components/App'
 import Hello from 'components/Hello'
 
-Vue.use(VueRouter)
+Vue.use(Router)
 
-const router = new VueRouter({
+// const env = process.env.NODE_ENV || 'production'
+const router = new Router({
   history: true,
   saveScrollPosition: true
 })
@@ -23,4 +24,4 @@ router.map({
 
 let VueApp = Vue.extend(Root)
 
-router.start(VueApp, '#app')
+router.start(VueApp, 'app')
