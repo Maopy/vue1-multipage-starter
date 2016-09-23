@@ -2,6 +2,7 @@ import path from 'path'
 import glob from 'glob'
 import webpack from 'webpack'
 import cssnext from 'postcss-cssnext'
+import vuxLoader from 'vux-loader'
 
 import config from '../config'
 import * as utils from './utils'
@@ -11,7 +12,7 @@ const projectRoot = path.resolve(__dirname, '../')
 
 let getEntry = (globPath) => {
   let entries = {
-    vendor: ['vue']
+    vendor: ['vue', 'vux', 'vuex', 'vue-router']
   }
   glob.sync(globPath).forEach((entry) => {
     var pathname = entry.split('/').splice(-1).join('/').split('.')[0]
@@ -51,6 +52,7 @@ export default {
         test: /\.vue$/,
         loader: 'vue'
       },
+      vuxLoader.getBabelLoader(projectRoot),
       {
         test: /\.js$/,
         loader: 'babel',

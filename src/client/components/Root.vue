@@ -8,7 +8,10 @@
     <router-view transition="fade" transition-mode="out-in" keep-alive></router-view>
   </div>
 </template>
+
 <style>
+  @import '~vux/dist/styles/reset.css';
+  @import '~vux/dist/styles/1px.css';
   [v-cloak] {
     display: none;
   }

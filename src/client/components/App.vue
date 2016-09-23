@@ -45,7 +45,7 @@
 
 <script>
 import Hello from 'components/Hello'
-// import { Flexbox, FlexboxItem, Swiper, Icon } from 'vux'
+// import { Flexbox, FlexboxItem, Swiper, Icon, XImg } from 'vux'
 import { Flexbox, FlexboxItem } from 'vux-components/flexbox'
 import Swiper from 'vux-components/swiper'
 import Icon from 'vux-components/icon'
@@ -78,8 +78,6 @@ export default {
 </script>
 
 <style>
-@import '~vux/dist/vux.css';
-
 html {
   height: 100%;
 }
