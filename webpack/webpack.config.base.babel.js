@@ -12,7 +12,7 @@ const projectRoot = path.resolve(__dirname, '../')
 
 let getEntry = (globPath) => {
   let entries = {
-    vendor: ['vue', 'vux', 'vuex', 'vue-router']
+    vendor: ['vue', 'vuex', 'vue-router']
   }
   glob.sync(globPath).forEach((entry) => {
     var pathname = entry.split('/').splice(-1).join('/').split('.')[0]
