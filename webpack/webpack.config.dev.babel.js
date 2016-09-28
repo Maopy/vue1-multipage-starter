@@ -42,6 +42,10 @@ chunks.forEach((pathname) => {
     conf.chunks = ['vendor', pathname]
     conf.hash = false
   }
+  if (pathname in devConfig.entry) {
+    conf.chunks = ['vendor', pathname]
+    conf.hash = false
+  }
   devConfig.plugins.push(new HtmlWebpackPlugin(conf))
 })
 

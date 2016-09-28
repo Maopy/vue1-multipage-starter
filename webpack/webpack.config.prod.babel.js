@@ -81,6 +81,10 @@ chunks.forEach((pathname) => {
     },
     chunksSortMode: 'dependency'
   }
+  if (pathname in prodConfig.entry) {
+    conf.chunks = ['vendor', pathname]
+    conf.hash = false
+  }
   prodConfig.plugins.push(new HtmlWebpackPlugin(conf))
 })
 
