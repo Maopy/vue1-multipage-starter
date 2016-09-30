@@ -24,27 +24,18 @@
 .eslintrc
 </pre>
 
-## 技术细节
+## 特性
 
-### Webpack
+1. src/modules 下存放各页面的入口文件，Webpack 会据此生成 HTML 文件，并自动引入CSS、JS文件
+2. dev 模式下会启动热更新，项目中的 Koa 服务，既可作为 dev server，又可作为生产环境中的服务
+3. build 执行时，会根据文件内容生成8位hash的文件名，可据此做服务器缓存，亦可替换为自己的 CDN URL
+4. 引入了 postcss，可以提前使用 CSS4 的语法啦！同时自动对 Android 4+、 iOS 7+ 添加CSS前缀
+5. 引入 Vux 作为基础 UI 框架
+6. vue-router 提供了“多单页”应用开发选项
+7. vuex 各单页应用数据流处理
+8. ESNEXT 编译至 ES5
 
-1. 自动引入多页入口文件
-2. 自动模板生成 HTML 页
-3. dev 环境热更新
-4. prod 环境按照文件内容生成 hash 文件名
-5. 更换静态资源（图片等）URL 可配置为 CDN
-6. CSS 文件单独打包
+### 待加入特性
 
-### POSTCSS
-
-1. css-next 可以使用未来的CSS语法
-2. autoprefixer 自动添加浏览器前缀
-3. 自动根据 caniuse 兼容最新2版 chrome、最新3版 iOS
-
-### UI
-
-1. 引入 Vux 作为基础UI框架
-
-### 其他
-
-1. vue-router 前端路由，并加入切换效果
+1. CSS nano
+2. postcss flexible
