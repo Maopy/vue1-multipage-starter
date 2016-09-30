@@ -50,3 +50,4 @@
 
 1. CSS nano
 2. postcss flexible
+3. eslint standard
