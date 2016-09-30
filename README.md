@@ -3,6 +3,9 @@
 ## 运行
 
 ```bash
+  $ git clone git@github.com:Maopy/vue1-multipage-starter.git
+  $ rm -rf .git  # 将项目变为你自己的
+
   $ npm run dev  # 进入开发模式
   
   $ npm run build  # 打包
