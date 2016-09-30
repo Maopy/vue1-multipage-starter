@@ -1,5 +1,13 @@
 # Vue Starter
 
+## 运行
+
+```bash
+  $ npm run dev  # 进入开发模式
+  
+  $ npm run build  # 打包
+```
+
 ## 目录结构
 
 <pre>
@@ -35,7 +43,7 @@
 7. vuex 各单页应用数据流处理
 8. ESNEXT 编译至 ES5
 
-### 待加入特性
+## 待加入特性
 
 1. CSS nano
 2. postcss flexible
